@@ -34,7 +34,13 @@ const Banner = () => {
               wrapper='span'
               repeat={Infinity}
             />
-            <p>simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+          </div>
+          <p>
+            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          </p>
+          <div>
+            <button className='btn btn-lg'>Contact me</button>
+            <a href='#' className='text-gradient btn-link'>My Portfolio</a>
           </div>
           {/* images */}
           <div>
