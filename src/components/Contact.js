@@ -49,9 +49,9 @@ const Contact = () => {
             <textarea
               className='bg-transparent border-b py-12 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all
-                          resize-none mb-12' >
+                          resize-none mb-12' 
               placeholder='Your message'
-
+            >
             </textarea>
             <button className='btn btn-lg '>Send message</button>
           </motion.form>
