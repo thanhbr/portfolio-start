@@ -14,7 +14,7 @@ const About = () => {
   })
 
   return (
-    <section className='section' id='about' ref={ref}>
+    <section className='min-h-[85vh] lg:min-h-[78vh] section' id='about' ref={ref}>
       <div className='container mx-auto'>
         <div className='flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen'>
           {/* img */}
@@ -33,7 +33,7 @@ const About = () => {
             viewport={{once: false, amount: 0.3}} 
             className='flex-1'
           >
-            <h2 className='h2 text-accent'>Abount me.</h2>
+            <h2 className='h2 text-accent'>About me.</h2>
             <h3 className='h3 mb-4'>I'm a Freelancer Front-end Developer with over 3 years of experience.</h3>
             <p className='mb-6'>
               <p>
