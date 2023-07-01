@@ -58,6 +58,7 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your name'
+              value={message?.author}
               onChange={(e) => setMessage({ ...message, author: e.target.value || ''  })}
             />
             <input 
@@ -65,6 +66,7 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your email'
+              value={message?.title}
               onChange={(e) => setMessage({ ...message, title: e.target.value || ''  })}
             />
             <textarea
@@ -72,6 +74,7 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all
                           resize-none mb-12' 
               placeholder='Your message'
+              value={message?.content}
               onChange={(e) => setMessage({ ...message, content: e.target.value || ''  })}
             >
             </textarea>
