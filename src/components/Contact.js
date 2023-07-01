@@ -3,17 +3,25 @@ import React, { useState } from 'react';
 import {motion} from 'framer-motion'
 // variants
 import {fadeIn} from '../variants'
+import { createPost } from '../apis/post';
 
 const Contact = () => {
   const [message, setMessage] = useState({
     supply: 'my-portfolio',
-    name: '',
-    email: '',
+    author: '',
+    title: '',
     content: ''
   })
 
-  const handleFormSubmit = _ => {
-    console.log('message', message);
+  const handleFormSubmit = async _ => {
+    const response = await createPost(message)
+    console.log('response', response)
+    setMessage({
+      supply: 'my-portfolio',
+      author: '',
+      title: '',
+      content: ''
+    })
   }
 
   return (
@@ -50,14 +58,14 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your name'
-              onChange={(e) => setMessage({ ...message, name: e.target.value || ''  })}
+              onChange={(e) => setMessage({ ...message, author: e.target.value || ''  })}
             />
             <input 
               className='bg-transparent border-b py-3 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your email'
-              onChange={(e) => setMessage({ ...message, email: e.target.value || ''  })}
+              onChange={(e) => setMessage({ ...message, title: e.target.value || ''  })}
             />
             <textarea
               className='bg-transparent border-b py-12 outline-none w-full
