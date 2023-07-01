@@ -76,15 +76,21 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'
             >
-              <a href='#'>
+              <a 
+                target='blank'
+                href='https://github.com/BlueStorm2000'
+              >
                 <FaGithub />
               </a>
-              <a href='#'>
+              <a 
+                target='blank'
+                href='https://www.linkedin.com/in/thanh-ma-the/'
+              >
                 <FaLinkedin />
               </a>
-              <a href='#'>
+              {/* <a href='#'>
                 <FaYoutube />
-              </a>
+              </a> */}
             </motion.div>
           </div>
           {/* images */}
