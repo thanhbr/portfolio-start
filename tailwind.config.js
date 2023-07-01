@@ -12,7 +12,7 @@ module.exports = {
       },
     },
     screens: {
-      ipSE: '375px',
+      ipSE: '275px',
       sm: '640px',
       md: '768px',
       lg: '960px',
