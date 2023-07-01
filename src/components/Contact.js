@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 // motion
 import {motion} from 'framer-motion'
 // variants
 import {fadeIn} from '../variants'
 
 const Contact = () => {
+  const [message, setMessage] = useState({
+    supply: 'portfolio',
+    name: '',
+    email: '',
+    message: ''
+  })
+
+
+  const handleSubmit = _ => {
+    console.log('message', message);
+  }
+
   return (
     <div className='py-16 lg:section' id='contact'>
       <div className='container mx-auto'>
@@ -39,21 +51,29 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your name'
+              onChange={(e) => {setMessage({...message, name: e?.target?.value || ''})}}
             />
             <input 
               className='bg-transparent border-b py-3 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your email'
+              onChange={(e) => {setMessage({...message, email: e?.target?.value || ''})}}
             />
             <textarea
               className='bg-transparent border-b py-12 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all
                           resize-none mb-12' 
               placeholder='Your message'
+              onChange={(e) => {setMessage({...message, message: e?.target?.value || ''})}}
             >
             </textarea>
-            <button className='btn btn-lg '>Send message</button>
+            <button 
+              className='btn btn-lg '
+              onClick={handleSubmit}
+            >
+              Send message
+            </button>
           </motion.form>
         </div>
       </div>
