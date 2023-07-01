@@ -6,14 +6,13 @@ import {fadeIn} from '../variants'
 
 const Contact = () => {
   const [message, setMessage] = useState({
-    supply: 'portfolio',
+    supply: 'my-portfolio',
     name: '',
     email: '',
-    message: ''
+    content: ''
   })
 
-
-  const handleSubmit = _ => {
+  const handleFormSubmit = _ => {
     console.log('message', message);
   }
 
@@ -51,28 +50,31 @@ const Contact = () => {
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your name'
-              onChange={(e) => {setMessage({...message, name: e?.target?.value || ''})}}
+              onChange={(e) => setMessage({ ...message, name: e.target.value || ''  })}
             />
             <input 
               className='bg-transparent border-b py-3 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all' 
               type='text'
               placeholder='Your email'
-              onChange={(e) => {setMessage({...message, email: e?.target?.value || ''})}}
+              onChange={(e) => setMessage({ ...message, email: e.target.value || ''  })}
             />
             <textarea
               className='bg-transparent border-b py-12 outline-none w-full
                         placeholder:text-white focus:border-accent transition-all
                           resize-none mb-12' 
               placeholder='Your message'
-              onChange={(e) => {setMessage({...message, message: e?.target?.value || ''})}}
+              onChange={(e) => setMessage({ ...message, content: e.target.value || ''  })}
             >
             </textarea>
             <button 
               className='btn btn-lg '
-              onClick={handleSubmit}
+              onClick={e => {
+                e.preventDefault()
+                handleFormSubmit()
+              }}
             >
-              Send message
+            Send message
             </button>
           </motion.form>
         </div>
