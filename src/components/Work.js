@@ -34,7 +34,10 @@ const Work = () => {
               </button>
             </div>
             {/* image */}
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            <a 
+              href='http://thanhbr-metaversus.vercel.app/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
               {/* overplay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
@@ -44,13 +47,14 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-accent'>UI/UX Designer</span>
+                <span className='text-accent font-bold'>#NextJS </span>
+                <span className='text-accent font-bold'>#Tailwind</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white'>Metaverse</span>
               </div>
-            </div>
+            </a>
           </motion.div>
           <motion.div 
             variants={fadeIn('left', 0.2)}
