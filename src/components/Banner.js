@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 // variants
 import { fadeIn } from '../variants'
 import { TypeAnimation } from 'react-type-animation';
+import CV from "../assets/Ma The Thanh - Full Stack Software Engineer.pdf";
 
 
 const Banner = () => {
@@ -65,8 +66,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }} 
               className='flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0'
             >
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>My Portfolio</a>
+              <a className='btn btn-lg flex items-center' href="tel:+84376219276">Contact me</a>
+              <a href={CV} target='blank' className='text-gradient btn-link'>My Portfolio</a>
             </motion.div>
             {/* socials */}
             <motion.div

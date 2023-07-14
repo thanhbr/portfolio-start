@@ -7,6 +7,7 @@ import {useInView} from 'react-intersection-observer'
 import {motion} from 'framer-motion'
 // variant
 import { fadeIn } from '../variants'
+import CV from "../assets/Ma The Thanh - Full Stack Software Engineer.pdf"
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -51,7 +52,7 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView 
-                    ? <CountUp start={0} end={5} duration={3}/>
+                    ? <CountUp start={0} end={4} duration={3}/>
                     : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>
@@ -83,10 +84,8 @@ const About = () => {
               </div>
             </div>
             <div className='flex gap-x-8 items-center'>
-              <button className='btn btn-lg'>Contact me</button>
-              <a href='#' className='text-gradient btn-link'>
-                My Portfolio
-              </a>
+              <a className='btn btn-lg flex items-center' href="tel:+84376219276">Contact me</a>
+              <a href={CV} target='blank' className='text-gradient btn-link'>My Portfolio</a>
             </div>
           </motion.div>
         </div>
