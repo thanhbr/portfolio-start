@@ -5,6 +5,7 @@ import { BsArrowUpRight } from 'react-icons/bs'
 import { motion } from 'framer-motion';
 // variants
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll';
 
 
 // services data
@@ -41,7 +42,9 @@ const Services = () => {
           >
             <h2 className='h2 text-accent mb-6'>What I do</h2>
             <h3 className='h3 max-w-[455px] mb-16'>I'm a Freelancer Front-end Developer with over 4 years of experience.</h3>
-            <button className='btn btn-sm'>See my work</button>
+            <Link to='work'>
+              <button className='btn btn-sm' >See my work</button>
+            </Link>
           </motion.div>
           {/* services */}
           <motion.div
