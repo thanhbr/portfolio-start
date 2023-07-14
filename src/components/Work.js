@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 // images
 import Image1 from '../assets/portfolio-img1.png'
-import Image2 from '../assets/portfolio-img2.png'
+import Image2 from '../assets/portfolio-img4.png'
 import Image3 from '../assets/portfolio-img3.png'
 
 const Work = () => {
@@ -64,7 +64,10 @@ const Work = () => {
             className='flex-1 flex flex-col gap-y-10'
           >
             {/* image */}
-            <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
+            <a
+              href='https://thanhbr-netflix-clone.web.app/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
               {/* overplay */}
               <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
               {/* img */}
@@ -74,13 +77,13 @@ const Work = () => {
               />
               {/* pretitle */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
-                <span className='text-accent'>UI/UX Designer</span>
+                <span className='text-accent font-bold'>#ReactJS #MUI</span>
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3xl text-white'>Project Title</span>
+                <span className='text-3xl text-white font-bold'>Netflex Clone</span>
               </div>
-            </div>
+            </a>
             {/* image */}
             <a
               href='https://thanhbr-covid19-tracker.web.app/'
