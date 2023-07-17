@@ -14,8 +14,7 @@ const Contact = () => {
   })
 
   const handleFormSubmit = async _ => {
-    const response = await createPost(message)
-    console.log('response', response)
+    await createPost(message)
     setMessage({
       supply: 'my-portfolio',
       author: '',

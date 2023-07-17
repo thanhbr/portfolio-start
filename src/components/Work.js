@@ -8,7 +8,8 @@ import Image1 from '../assets/portfolio-img1.png'
 import Image2 from '../assets/portfolio-img4.png'
 import Image3 from '../assets/portfolio-img3.png'
 
-const Work = () => {
+const Work = ({projects}) => {
+  // console.log('projects', projects);
   return (
     <section className='section' id='work'>
       <div className='container mx-auto'>
@@ -81,7 +82,7 @@ const Work = () => {
               </div>
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
-                <span className='text-3xl text-white font-bold'>Netflex Clone</span>
+                <span className='text-3xl text-white font-bold'>Netflix Clone</span>
               </div>
             </a>
             {/* image */}
