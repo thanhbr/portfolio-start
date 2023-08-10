@@ -7,9 +7,11 @@ import {fadeIn} from '../variants'
 import Image1 from '../assets/portfolio-img1.png'
 import Image2 from '../assets/portfolio-img4.png'
 import Image3 from '../assets/portfolio-img3.png'
+import { projectList } from '../interfaces/contant';
 
 const Work = ({projects}) => {
-  // console.log('projects', projects);
+  const list = projectList(projects)
+  
   return (
     <section className='section' id='work'>
       <div className='container mx-auto'>
@@ -57,6 +59,7 @@ const Work = ({projects}) => {
               </div>
             </a>
           </motion.div>
+
           <motion.div 
             variants={fadeIn('left', 0.2)}
             initial='hidden'
