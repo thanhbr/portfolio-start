@@ -15,7 +15,7 @@ const Work = ({projects}) => {
   const list = projectList(projects)
   
   return (
-    <section className='section' id='work'>
+    <div className='pt-[6rem]' id='work'>
       <div className='container m-auto'>
         <div className='flex flex-col lg:flex-row gap-x-10'>
           <motion.div
@@ -157,7 +157,7 @@ const Work = ({projects}) => {
           </motion.div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
