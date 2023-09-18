@@ -30,7 +30,7 @@ const Work = ({projects}) => {
                 Work.
               </h2>
               <p className='max-w-sm mb-16'>
-                I'm here to turn your concepts into captivating digital experiences.
+                I'm well-rounded when it comes to ReactJS,... My skill set allows me to see the big picture and dive into the most critical aspects of the project.
               </p>
               <button className='btn btn-sm'>
                 View all project
