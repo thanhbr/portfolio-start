@@ -7,6 +7,8 @@ import {fadeIn} from '../variants'
 import Image1 from '../assets/portfolio-img1.png'
 import Image2 from '../assets/portfolio-img4.png'
 import Image3 from '../assets/portfolio-img3.png'
+import Image5 from '../assets/portfolio-img5.png'
+import Image6 from '../assets/portfolio-img6.png'
 import { projectList } from '../interfaces/contant';
 
 const Work = ({projects}) => {
@@ -30,7 +32,7 @@ const Work = ({projects}) => {
                 Work.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                I'm well-rounded when it comes to ReactJS,... My skill set allows me to see the big picture and dive into the most critical aspects of the project.
               </p>
               <button className='btn btn-sm'>
                 View all project
@@ -56,6 +58,28 @@ const Work = ({projects}) => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
                 <span className='text-3xl text-white font-bold'>Metaverse</span>
+              </div>
+            </a>
+            {/* image */}
+            <a 
+              href='https://thanhbr-bank-modern-app.vercel.app/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image6} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#NextJS </span>
+                <span className='text-accent font-bold'>#Tailwind</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>Next Generation</span>
               </div>
             </a>
           </motion.div>
@@ -86,6 +110,27 @@ const Work = ({projects}) => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
                 <span className='text-3xl text-white font-bold'>Netflix Clone</span>
+              </div>
+            </a>
+            {/* image */}
+            <a
+              href='https://thanhbr-healthy-arent.vercel.app'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image5} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#ReactJS #Tailwind</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>Healthy Arent</span>
               </div>
             </a>
             {/* image */}
