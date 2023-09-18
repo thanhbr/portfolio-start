@@ -27,7 +27,7 @@ const Work = () => {
                 Work.
               </h2>
               <p className='max-w-sm mb-16'>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                I'm here to turn your concepts into captivating digital experiences.
               </p>
               <button className='btn btn-sm'>
                 View all project
