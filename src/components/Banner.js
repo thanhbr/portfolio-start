@@ -8,7 +8,7 @@ import { motion } from 'framer-motion'
 // variants
 import { fadeIn } from '../variants'
 import { TypeAnimation } from 'react-type-animation';
-import CV from "../assets/Ma The Thanh - Full Stack Software Engineer.pdf";
+import CV from "../assets/Ma The Thanh - Frontend Developer.pdf";
 
 
 const Banner = () => {
@@ -56,8 +56,8 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              I have worked in this field of software for three years. 
-              I specialize in building software that meets customer needs and I have a unique approach to doing this.
+              Result-oriented Frontend Developer with 3+ years of experience specializing in developing intuitive and efficient user interfaces for comprehensive Sales Management
+              Systems. Proficient in JavaScript, ReactJS, and NextJS. Proven ability to collaborate with cross-functional teams to deliver high-quality and scalable web applications.
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
