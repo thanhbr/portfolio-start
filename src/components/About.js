@@ -38,13 +38,13 @@ const About = () => {
             <h3 className='h3 mb-4'>I'm a Freelancer Front-end Developer with over 3 years of experience.</h3>
             <p className='mb-6'>
               <p>
-                1. End to End development of the Web platforms for E-commerce, and other web showcases with multi-user features like Customers, Sellers, etc. as well as Admin Panels to handle everything.
+                1. Over 3 years of experience as a Freelancer Front-end Developer, delivering successful projects and showcasing a track record of accomplishments.
               </p>
               <p>
-                2. On the front end side, I work on the latest versions of React, HTML, CSS, Jquery, and much more. Using these, I can create responsive and attractive websites.
+                2. Expertise in Front-end development, specializing in JavaScript, ReactJS, and other relevant technologies. Proficient in crafting dynamic and responsive user interfaces for diverse clients.
               </p>
               <p>
-                3. On the API front, I have handled various third-party data providers. I have also worked on RESTful APIs and created custom APIs.
+                3. Proactive learner, staying abreast of the latest industry trends and technologies. Known for optimizing website performance and implementing efficient coding practices to ensure high-quality and effective solutions.
               </p>
             </p>
             {/* stats */}
@@ -52,7 +52,7 @@ const About = () => {
               <div>
                 <div className='text-[40px] font-tertiary text-gradient mb-2'>
                   {inView 
-                    ? <CountUp start={0} end={4} duration={3}/>
+                    ? <CountUp start={0} end={3} duration={3}/>
                     : null}
                 </div>
                 <div className='font-primary text-sm tracking-[2px]'>

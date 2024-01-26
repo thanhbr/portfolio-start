@@ -11,18 +11,18 @@ import { Link } from 'react-scroll';
 // services data
 const services = [
   {
-    name: 'UI/UX Design',
-    description: 'Professional who identifies new opportunities to create better user experiences. Aesthetically pleasing branding strategies help them effectively reach more customers. ',
+    name: 'Front-end Development',
+    description: 'Designing and implementing responsive and user-friendly interfaces using HTML, CSS, and JavaScript.',
     link: 'Learn more'
   },
   {
-    name: 'Deveplopment',
-    description: 'A process that creates growth, brings in progress and positive change. Development is a healthy sign.',
+    name: 'Project Delivery',
+    description: 'Managing end-to-end project lifecycles, from initial concept and design to development, testing, and deployment.',
     link: 'Learn more'
   },
   {
-    name: 'Product branding',
-    description: 'Helps retailers manufacture those emotional connections, which direct potential customers toward a sale. Product branding is crucial to the success of a corporate brand in the sense that, in most cases.',
+    name: 'Optimization',
+    description: 'Conducting thorough performance analysis and implementing optimizations to enhance website speed and efficiency.',
     link: 'Learn more'
   },
 ]
@@ -41,7 +41,7 @@ const Services = () => {
             className='flex-1 ipSE:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 bg-contain h-[300px]'
           >
             <h2 className='h2 text-accent mb-6'>What I do</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>I'm a Freelancer Front-end Developer with over 4 years of experience.</h3>
+            <h3 className='h5 max-w-[455px] mb-16 font-medium'>As a Freelancer Front-end Developer, my expertise lies in creating captivating and efficient user interfaces for a diverse range of clients. Here's a glimpse of what I do:</h3>
             <Link to='work'>
               <button className='btn btn-sm' >See my work</button>
             </Link>

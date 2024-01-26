@@ -40,7 +40,7 @@ const Banner = () => {
                 sequence={[
                   'Developer',
                   2000,
-                  'Designer',
+                  'Project Delivery',
                   2000
                 ]}
                 speed={50}
@@ -56,8 +56,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              Result-oriented Frontend Developer with 3+ years of experience specializing in developing intuitive and efficient user interfaces for comprehensive Sales Management
-              Systems. Proficient in JavaScript, ReactJS, and NextJS. Proven ability to collaborate with cross-functional teams to deliver high-quality and scalable web applications.
+              Talented e-commerce-focused Developer with expertise in JavaScript, ReactJS, and NextJS. Proficient in crafting robust and scalable solutions for online commerce platforms. 
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.6)}
