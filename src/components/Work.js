@@ -4,11 +4,12 @@ import {motion} from 'framer-motion'
 // variants
 import {fadeIn} from '../variants'
 // images
-import Image1 from '../assets/portfolio-img1.png'
-import Image2 from '../assets/portfolio-img4.png'
-import Image3 from '../assets/portfolio-img3.png'
-import Image5 from '../assets/portfolio-img5.png'
-import Image6 from '../assets/portfolio-img6.png'
+import Image1 from '../assets/portfolio-img1.png';
+import Image2 from '../assets/portfolio-img4.png';
+import Image3 from '../assets/portfolio-img3.png';
+import Image5 from '../assets/portfolio-img5.png';
+import Image6 from '../assets/portfolio-img6.png';
+import Image7 from '../assets/portfolio-img7.png';
 import { projectList } from '../interfaces/contant';
 
 const Work = ({projects}) => {
@@ -82,15 +83,7 @@ const Work = ({projects}) => {
                 <span className='text-3xl text-white font-bold'>Next Generation</span>
               </div>
             </a>
-          </motion.div>
-
-          <motion.div 
-            variants={fadeIn('left', 0.2)}
-            initial='hidden'
-            whileInView={'show'}
-            viewport={{once: false, amount: 0.3}} 
-            className='flex-1 flex flex-col gap-y-10'
-          >
+            
             {/* image */}
             <a
               href='https://thanhbr-netflix-clone.web.app/'
@@ -110,6 +103,37 @@ const Work = ({projects}) => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
                 <span className='text-3xl text-white font-bold'>Netflix Clone</span>
+              </div>
+            </a>
+            {/* image */}
+          </motion.div>
+
+          <motion.div 
+            variants={fadeIn('left', 0.2)}
+            initial='hidden'
+            whileInView={'show'}
+            viewport={{once: false, amount: 0.3}} 
+            className='flex-1 flex flex-col gap-y-10'
+          >
+            {/* image */}
+            <a
+              href='https://thanhbr.pages.dev/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image7} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#MERN</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>Vista blog</span>
               </div>
             </a>
             {/* image */}
