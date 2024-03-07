@@ -10,6 +10,9 @@ import Image3 from '../assets/portfolio-img3.png';
 import Image5 from '../assets/portfolio-img5.png';
 import Image6 from '../assets/portfolio-img6.png';
 import Image7 from '../assets/portfolio-img7.png';
+import Image8 from '../assets/portfolio-img8.png';
+import Image9 from '../assets/portfolio-img9.png';
+import Image10 from '../assets/portfolio-img10.png';
 import { projectList } from '../interfaces/contant';
 
 const Work = ({projects}) => {
@@ -24,10 +27,10 @@ const Work = ({projects}) => {
             initial='hidden'
             whileInView={'show'}
             viewport={{once: false, amount: 0.3}} 
-            className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'
+            className='flex-1 flex flex-col gap-y-10 mb-10 lg:mb-0'
           >
             {/* text */}
-            <div>
+            <div className='mb-2'>
               <h2 className='h2 leading-tight text-accent'>
                 My Latest <br />
                 Work.
@@ -39,6 +42,29 @@ const Work = ({projects}) => {
                 View all project
               </button>
             </div>
+            
+            {/* image */}
+            <a
+              href='https://upos.vn/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image8} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#ReactJS #MUI #PHP</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>UPOS | Online sales and management</span>
+              </div>
+            </a>
+            {/* image */}
             {/* image */}
             <a 
               href='http://thanhbr-metaversus.vercel.app/'
@@ -134,6 +160,49 @@ const Work = ({projects}) => {
               {/* title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
                 <span className='text-3xl text-white font-bold'>Vista blog</span>
+              </div>
+            </a>
+            {/* image */}
+            {/* image */}
+            <a
+              href='https://evoshop.vn/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image9} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#ReactJS #MUI #PHP</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>evoshop | Sales Manager Website UI Kit</span>
+              </div>
+            </a>
+            {/* image */}
+            <a
+              href='https://admin-dev.upos.vn/'
+              target='_blank'
+              className='group relative overflow-hidden border-2 border-white/50 rounded-xl lg:max-h-[319px] md:max-h-[417px]'>
+              {/* overplay */}
+              <div className='group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300'></div>
+              {/* img */}
+              <img src={Image10} 
+                    alt='image' 
+                  className='group-hover:scale-125 transition-all duration-500'
+              />
+              {/* pretitle */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50'>
+                <span className='text-accent font-bold'>#ReactJS #MUI #PHP</span>
+              </div>
+              {/* title */}
+              <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-500 z-50'>
+                <span className='text-3xl text-white font-bold'>Admin System</span>
               </div>
             </a>
             {/* image */}
